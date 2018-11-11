@@ -1,0 +1,39 @@
+<form method="post" action="convert-url-link.php" class="online-tools">
+<h2>Convert Multiple URLs into Links</h2>
+<p>Paste your URLs in the box below and then click the button.</p>
+<p>The URLs will appear as link code in the box at the bottom of the page.</p>
+<p class="flat"><input type="radio" id="urlsep1" class="urlsep" name="urlsep" value="line" checked="checked"> My URLs are on separate lines</p>
+<p class="flat"><input type="radio" id="urlsep2" class="urlsep" name="urlsep" value="comma"> My URLs are separated by commas.</p>
+<p class="flat"><input type="radio" id="urlsep3" class="urlsep" name="urlsep" value="space"> My URLs are separated by spaces.</p>
+<p><strong>HTML Link Formatting</strong> (optional)</p>
+<p class="flat"><input type="radio" id="urlformat1" class="urlformat" name="urlformat" value="nope" checked="checked"> No special formatting</p>
+<p class="flat"><input type="radio" id="urlformat2" class="urlformat" name="urlformat" value="paragraph"> Wrap each link in a paragraph tag</p>
+<p class="flat"><input type="radio" id="urlformat3" class="urlformat" name="urlformat" value="br"> Wrap all the links in a &lt;p&gt; with a &lt;br /&gt; after each link</p>
+<p class="flat"><input type="radio" id="urlformat4" class="urlformat" name="urlformat" value="div"> Wrap each link in a div tag</p>
+<p class="flat"><input type="radio" id="urlformat5" class="urlformat" name="urlformat" value="ul"> Put all the links in a bulleted list</p>
+<p class="flat"><input type="radio" id="urlformat6" class="urlformat" name="urlformat" value="ol"> Put all the links in a numbered list</p>
+<p>Link Target (optional) 
+<select id="lTarget">
+<option value="nope">No Target</option>
+<option value="_blank">_blank (New Window)</option>
+<option value="_self">_self</option>
+<option value="_parent">_parent</option>
+<option value="_top">_top</option>
+</select>
+</p>
+
+
+<p><textarea id="oldText" name="oldText" rows="9" cols="56"></textarea></p>
+<p><input type="button" name="Convert-URL-link" value="Convert URL to to HTML link" id="convertURL" class="subbtn">
+<input type="button" name="clearText" id="clearText" value="Reset" class="rstbtn"></p>
+<h2>URLs Converted into HTML Link Code</h2>
+<p class="flat">Copy your URL links code from the box below.</p>
+<p><textarea id="newCode" name="newCode" rows="9" cols="56"></textarea></p>
+<p>
+<input type="button" name="copyClip" id="copyClip" value="Copy to Clipboard" class="actbtn" data-clipboard-target="#newCode">
+</p>
+</form>
+
+
+<script type="text/javascript" src="aaaurl-html-link-v6c.js"></script>
+<script type="text/javascript" src="aaaclipped.js"></script>
